@@ -1,45 +1,280 @@
-body {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: "All";
+    src: url("/assets/Comfortaa-police/Comfortaa-VariableFont_wght.ttf");
 }
 
-/* Dark mode */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "All";
+    background-color: #D3DDEB;
+    transition: background 0.2s linear;
+}
+
+main {
+    height: 90vh;
+}
+
+/* Changement en css pour changer les couleurs avec le JS */
+
+.dark {
+    background-color:  #0D1219;
+}
+
+.dark h1 {
+    color: #E9EEF5;
+}
+
+.dark p {
+    color: #D3DDEB;
+}
+
+.dark .label-mail {
+    color: #D3DDEB;
+}
+
+.dark .checkbox-label {
+    background-color: #06080B;
+}
+
+.dark .checkbox-label .ball {
+    background-color: #0D1219;
+}
+
+.dark .btn-mail {
+    background-color: #0D1219;
+}
+
+.fa-chevron-right {
+    color: #9C8AA8;
+}
+
+.dark .left-phone-container img{
+    filter: none;
+}
+
+.dark .phone-right {
+    filter: drop-shadow(14px 14px 40px rgb(6, 8, 11));
+}
+
+.dark .checkbox-label .ball {
+    box-shadow: -3px 1px 6px 0px rgba(66, 66, 66, 0.448);
+}
+
+.dark .checkbox-label {
+    box-shadow: 6px 6px 5px -4px
+    rgba(13, 18, 25, 1)  inset;
+}
+
+.dark .shadow-mail {
+    box-shadow: rgb(0, 0, 0) 3.2px 3.2px 8px 0px inset, rgb(13, 18, 25) -3.2px -3.2px 8px 0px inset;
+}
+
+.dark .melody-title {
+    color: #E9EEF5;
+}
+
+
+/* Pour gérer la nav en CSS */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.melody-title {
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+.music-title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: #8438B8;
+}
+
+
+.logo img {
+    width: 85px;
+    height: 85px;
+}
+
+.logo-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* Dark mode button */
+
+* {box-sizing: border-box;}
 
 .checkbox {
     opacity: 0;
+    /* position: absolute; */
   }
-
-.checkbox-label {
-    background-color: hsl(0, 0%, 7%);
-    width: 65px;
-    height: 26px;
+  
+  .checkbox-label {
+    background-color: #E9EEF5;
+    width: 57px;
+    height: 28px;
     border-radius: 50px;
     position: relative;
-    padding: 8px;
+    padding: 5px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  .fa-moon {color: #9C8AA8;}
+  
+  .fa-sun {color: #9C8AA8;}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(30px);
+  }
+  
+
+/* Grid placement */
+.entire-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* align-items: center;   */
+}
+
+.grid-left {
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.grid-right {
+    grid-column-start: 2;
+    display: flex;
+    gap: 30px;
+    margin-right: 4%;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+
+/* Tout le reste du CSS pour gérer le style général */
+
+.img-phone {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.color-title {
+    color: #8438B8;
+    font-weight: 100;
+}
+
+.btn-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+.left-phone-container {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.label-mail {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+#mail {
+    all: unset;
+    width: 80%;
+}
+
+.style-mail {
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shadow-mail {
+    box-shadow: rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
+}
+
+.btn-mail {
+    display: flex;
+    all: unset;
+    width: 20%;
+    text-align: center;
+    background-color: #E9EEF5;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+    margin-right: -9px;
+    cursor: pointer;
+}
+
+.btn-mail-shadow {
+    box-shadow: -73px -8px 132px -56px rgba(70,70,70,0.12) inset;
+}
+
+.color-label-mail {
+    color: #8438B8;
+}
+
+.btn {
+    position: absolute;
+    top: -1%;
+}
+
+.phone-right-container {
+    margin-top: 30%;
+}
+
+.left-phone-container img {
+    display: block;
+    filter: drop-shadow(14px 14px 40px rgba(166, 166, 166, 0.883));
+}
+
+.checkbox-label {
+    box-shadow: 6px 6px 5px -4px rgba(166, 166, 166, 0.883) inset;
 }
 
 .checkbox-label .ball {
-    background-color: #fff;
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    left: 6px;
-    top: 6px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
+    box-shadow: 4px 2px 6px 0px rgba(166, 166, 166, 0.883) ;
 }
-
-.checkbox:checked + .checkbox-label .ball {
-    transform: translateX(42px);
-  }
-
-.icon-darkmode {
-    z-index: 2;
-    width: 20px;
-    height: 20px;
-}
-

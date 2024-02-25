@@ -5,56 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melody Music Streaming</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="assets/images/logo.png" alt="logo melody music">
-            </div>
-            <div>
-                Melody
-            </div>
-            <div>
-                Music Streaming
-            </div>
-            <div>
-                <!-- Dark mode -->
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label for="checkbox" class="checkbox-label">
-                    <img src="assets/icons/moon.svg" class="icon-darkmode moon" alt="icon pour bouton dark mode lune">
-                    <img src="assets/icons/sun.svg"  class="icon-darkmode sun" alt="icon pour bouton dark mode soleil">
-                    <span class="ball"></span>
-                </label>  
-            </div>
-        </nav>  
-    </header>
+    <main class="entire-grid">
+        <!-- Partie gauche de la page -->
+        <section class="grid-left">
+            <nav>
+                <div class="logo-title">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo melody music">
+                    </div>
+                    <div class="melody-music-title">
+                        <div class="melody-title">
+                            Melody 
+                        </div>
+                        <div class="music-title">
+                            Music Streaming
+                        </div>
+                    </div>
+                </div>
+            </nav>
+                <h1><span class="color-title">We're</span><br>Coming <br> Soon</h1>
+                    <p>Get ready for a new musical experience.
+                        Register now to be among the first to discover our application!</p>
+                    <div>
+                        <form action="" id="form-mail">
+                            <label for="mail" class="label-mail">Join the beta <span class="color-label-mail">now</span></label>
+                            <div class="style-mail shadow-mail">
+                                <input type="mail" name="mail" id="mail" placeholder="john.doe@example.com">
+                                <button type="submit" name="mail" class="btn-mail btn-mail-shadow"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+        </section>
 
-<!-- Partie gauche de la landing page gérer en grid en css -->
-
-    <section>
-        <h1>We're Coming Soon</h1>
-            <p>Get ready for a new musical experience.
-                Register now to be among the first to discover our application!</p>
-            <div>
-                <p>Join the beta now</p>
-                <form action="">
-                    <input type="mail" name="mail" id="mail" placeholder="john.doe@example.com">
-                    <button><img src="assets/icons/chevron_right.svg" alt=""></button>
-                </form>
+        <!-- Partie droite de la page -->
+        <section class="grid-right">
+            <div class="left-phone-container">
+                <img src="assets/images/phone_light.png" class="img-phone phone-left" alt="">
             </div>
-    </section>
 
-<!-- Partie droite avec les images de smartphone  -->
+            <!-- Bouton DarkMode -->
+            <div class="btn-phone">
+                    <div class="btn">
+                        <input type="checkbox" name="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                        </label>
+                    </div>
 
-    <section>
-        <div>
-            <img src="assets/images/phone_light.png" alt="">
-        </div>
-        <div>
-            <img src="assets/images/phone_dark.png" alt="">
-        </div>
-    </section>
+                <div class="phone-right-container">
+                    <img src="assets/images/phone_dark.png" class="img-phone phone-right" alt="">
+                </div>
+            </div>    
+        </section>    
+    </main>
 <script src="app.js"></script>
 </body>
 </html>
+
+
+
+<!-- Ancien code que j'avais testé avec un principe de grille, mais j'avais ajouté la barre de navigation en dehors des grilles. Après réflexion, j'ai réalisé que cela allait devenir vraiment compliqué. J'ai donc changé de méthode pour intégrer la barre de navigation aux grilles. -->
+    
+    <!-- <main>
+        <header>
+            <nav>
+                <div class="logo-title">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo melody music">
+                    </div>
+                    <div class="melody-music-title">
+                        <div class="melody-title">
+                            Melody 
+                        </div>
+                        <div class="music-title">
+                            Music Streaming
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <img src="assets/icons/moon.svg" class="icon-darkmode moon" alt="icon pour bouton dark mode lune">
+                        <img src="assets/icons/sun.svg"  class="icon-darkmode sun" alt="icon pour bouton dark mode soleil">
+                        <span class="ball"></span>
+                    </label>  
+                </div>
+            </nav>  
+        </header>
+
+    
+    <section class="entire-grid">
+        <div class="grid-left">
+            <h1><span class="color-title">We're</span> Coming <br> Soon</h1>
+                <p>Get ready for a new musical experience.
+                    Register now to be among the first to discover our application!</p>
+                <div>
+                    <p>Join the beta now</p>
+                    <form action="">
+                        <input type="mail" name="mail" id="mail" placeholder="john.doe@example.com">
+                        <button><img src="assets/icons/chevron_right.svg" alt=""></button>
+                    </form>
+                </div>
+        </div>
+
+   
+
+            <div class="grid-right1">
+                <img src="assets/images/phone_light.png" class="img-phone phone-left" alt="">
+            </div>
+            <div class="grid-right2">
+                <img src="assets/images/phone_dark.png" class="img-phone phone-right" alt="">
+            </div>
+    </section>
+</main>  -->

@@ -49,7 +49,11 @@ main {
     color: #9C8AA8;
 }
 
-.dark .left-phone-container img{
+/* .dark .left-phone-container img{
+    filter: none;
+} */
+
+.dark .phone-left {
     filter: none;
 }
 
@@ -150,6 +154,7 @@ nav {
   
 
 /* Grid placement */
+
 .entire-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -266,8 +271,12 @@ p {
     margin-top: 30%;
 }
 
-.left-phone-container img {
+/* .left-phone-container img {
     display: block;
+    filter: drop-shadow(14px 14px 40px rgba(166, 166, 166, 0.883));
+} */
+
+.phone-left {
     filter: drop-shadow(14px 14px 40px rgba(166, 166, 166, 0.883));
 }
 
@@ -277,4 +286,342 @@ p {
 
 .checkbox-label .ball {
     box-shadow: 4px 2px 6px 0px rgba(166, 166, 166, 0.883) ;
+}
+
+
+/* Responsive */
+
+/* Très grand écrans */
+
+@media only screen and (min-width: 3080px) and (max-width: 4000px) {
+
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .melody-title {
+        font-size: 7rem;
+    }
+
+    .music-title {
+        font-size: 5rem;
+    }
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    p {
+       font-size: 5rem; 
+    }
+
+    .label-mail {
+        font-size: 5rem;
+    }
+
+    #mail {
+        height: 50px;
+    }
+
+    #mail::placeholder {
+        font-size: 2rem;
+    }
+
+    .img-phone {
+        width: 180%;
+        max-width: none;
+    }
+}
+
+  
+    
+@media only screen and (min-width: 2000px) and (max-width: 3080px) {
+
+    .logo img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .melody-title {
+        font-size: 5rem;
+    }
+
+    .music-title {
+        font-size: 3.5rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    p {
+       font-size: 3rem; 
+    }
+
+    .label-mail {
+        font-size: 3rem;
+    }
+
+    #mail {
+        height: 50px;
+    }
+
+    #mail::placeholder {
+        font-size: 2rem;
+    }
+
+    .img-phone {
+        width: 140%;
+        max-width: none;
+    }
+
+    .grid-right {
+        gap: 5%;
+        justify-content: space-between;
+    }
+
+    .btn-phone {
+        padding-right: 15%;
+    }
+
+    .left-phone-container {
+        padding-right: 10%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1800px) and (max-width: 2000px) {
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .melody-title {
+        font-size: 3rem;
+    }
+
+    .music-title {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+       font-size: 2rem; 
+    }
+
+    .label-mail {
+        font-size: 2rem;
+    }
+
+    #mail {
+        height: 30px;
+    }
+
+    #mail::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .img-phone {
+        width: 125%;
+        max-width: none;
+    }
+
+    .grid-right {
+        gap: 5%;
+        justify-content: space-between;
+    }
+
+    .btn-phone {
+        padding-right: 10%;
+    }
+
+    .left-phone-container {
+        padding-right: 10%;
+    }
+}
+
+
+
+/* Gestion de la tablette */
+
+@media screen  and (max-height: 1400px) {
+
+    .grid-right {
+        align-items: center;
+    }      
+}
+
+
+
+/* Mobile */
+
+@media screen  and (max-width: 900px) {
+
+    .grid-right {
+        align-items: center;
+    }      
+}
+
+@media screen  and (max-width: 769px) {
+
+    .entire-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+
+    .grid-right {
+        grid-column-start: 1;
+        margin-right: 0;
+        justify-content: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .btn {
+        position: absolute;
+        top: -90%;
+    }
+}
+
+@media screen  and (max-width: 621px) {
+
+    .btn {
+        position: absolute;
+        top: -100%;
+    }
+}
+
+@media screen  and (max-width: 579px) {
+
+    .btn {
+        position: absolute;
+        top: -105%;
+    }
+}
+
+@media screen  and (max-width: 566px) {
+
+    .btn {
+        position: absolute;
+        top: -113%;
+    }
+
+    .melody-title {
+        font-size: 2rem;
+    }
+
+    .music-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen  and (max-width: 524px) {
+
+    .btn {
+        position: absolute;
+        top: -122%;
+    }
+
+    .melody-title {
+        font-size: 1.7rem;
+    }
+
+    .music-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen  and (max-width: 479px) {
+
+    .btn {
+        position: absolute;
+        top: -135%;
+    }
+}
+
+@media screen  and (max-width: 456px) {
+
+    .melody-title {
+        font-size: 1.4rem;
+    }
+
+    .music-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen  and (max-width: 436px) {
+
+    .btn {
+        position: absolute;
+        top: -145%;
+    }
+}
+
+@media screen  and (max-width: 413px) {
+
+    .btn {
+        position: absolute;
+        top: -125%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen  and (max-width: 425px) {
+
+    .grid-right {
+        gap: 0px;
+        margin: 0;
+        margin-top: 10%;
+        justify-content: center;
+    }
+
+    .left-phone-container {
+        display: none;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .phone-right-container {
+        display: block;
+        margin-top: 0;
+    }
+
+    .dark .left-phone-container {
+        display: block;
+    }
+
+    .dark .phone-right-container {
+        display: none;
+    }
+
+
+
+    .btn {
+        position: absolute;
+        top: -105%;
+    }
+}
+
+
+@media screen  and (max-width: 413px) {
+
+    .btn {
+        position: absolute;
+        top: -88%;
+    }
 }

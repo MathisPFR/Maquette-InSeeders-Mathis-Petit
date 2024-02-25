@@ -98,7 +98,6 @@ nav {
     color: #8438B8;
 }
 
-
 .logo img {
     width: 85px;
     height: 85px;
@@ -118,9 +117,9 @@ nav {
 .checkbox {
     opacity: 0;
     /* position: absolute; */
-  }
+}
   
-  .checkbox-label {
+.checkbox-label {
     background-color: #E9EEF5;
     width: 57px;
     height: 28px;
@@ -131,13 +130,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .fa-moon {color: #9C8AA8;}
+.fa-moon {color: #9C8AA8;}
   
-  .fa-sun {color: #9C8AA8;}
+.fa-sun {color: #9C8AA8;}
   
-  .checkbox-label .ball {
+.checkbox-label .ball {
     background-color: #fff;
     width: 22px;
     height: 22px;
@@ -146,11 +145,11 @@ nav {
     top: 3px;
     border-radius: 50%;
     transition: transform 0.2s linear;
-  }
+}
   
-  .checkbox:checked + .checkbox-label .ball {
+.checkbox:checked + .checkbox-label .ball {
     transform: translateX(30px);
-  }
+}
   
 
 /* Grid placement */
@@ -271,11 +270,6 @@ p {
     margin-top: 30%;
 }
 
-/* .left-phone-container img {
-    display: block;
-    filter: drop-shadow(14px 14px 40px rgba(166, 166, 166, 0.883));
-} */
-
 .phone-left {
     filter: drop-shadow(14px 14px 40px rgba(166, 166, 166, 0.883));
 }
@@ -334,8 +328,7 @@ p {
     }
 }
 
-  
-    
+
 @media only screen and (min-width: 2000px) and (max-width: 3080px) {
 
     .logo img {
@@ -389,7 +382,6 @@ p {
         padding-right: 10%;
     }
 }
-
 
 
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
@@ -468,6 +460,7 @@ p {
     }      
 }
 
+
 @media screen  and (max-width: 769px) {
 
     .entire-grid {
@@ -490,6 +483,7 @@ p {
     }
 }
 
+
 @media screen  and (max-width: 621px) {
 
     .btn {
@@ -498,6 +492,7 @@ p {
     }
 }
 
+
 @media screen  and (max-width: 579px) {
 
     .btn {
@@ -505,6 +500,7 @@ p {
         top: -105%;
     }
 }
+
 
 @media screen  and (max-width: 566px) {
 
@@ -522,6 +518,7 @@ p {
     }
 }
 
+
 @media screen  and (max-width: 524px) {
 
     .btn {
@@ -538,6 +535,7 @@ p {
     }
 }
 
+
 @media screen  and (max-width: 479px) {
 
     .btn {
@@ -545,6 +543,7 @@ p {
         top: -135%;
     }
 }
+
 
 @media screen  and (max-width: 456px) {
 
@@ -557,6 +556,7 @@ p {
     }
 }
 
+
 @media screen  and (max-width: 436px) {
 
     .btn {
@@ -564,6 +564,7 @@ p {
         top: -145%;
     }
 }
+
 
 @media screen  and (max-width: 413px) {
 
@@ -580,6 +581,7 @@ p {
         font-size: 1.1rem;
     }
 }
+
 
 @media screen  and (max-width: 425px) {
 

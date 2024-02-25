@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-
 // La fonction pour le DarkMode qui ajoute une class dark sur le body au clique sur le bouton DarkMode
 
 const checkbox = document.getElementById("checkbox")
